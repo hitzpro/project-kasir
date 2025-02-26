@@ -1,0 +1,147 @@
+/* Media query untuk layar dengan lebar maksimum 768px (Tablet & HP) */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px; /* Kurangi padding agar tidak terlalu besar */
+        flex-direction: column; /* Susun navbar secara vertikal */
+        gap: 10px; /* Beri jarak antar elemen */
+        text-align: center; /* Pusatkan teks */
+    }
+
+    .navbar img.logo-nav {
+        height: 30px; /* Perkecil logo */
+    }
+
+    .navbar .nav-log,
+    .navbar .nav-back,
+    .navbar .nav-order-log {
+        /* flex-direction: column; Susun elemen dalam satu kolom */
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav-button {
+        flex-direction: column; /* Susun tombol secara vertikal */
+        gap: 5px;
+    }
+
+    .navbar a {
+        font-size: 14px; /* Perkecil ukuran teks */
+    }
+
+    .btn {
+        padding: 8px 15px; /* Kurangi ukuran tombol */
+        font-size: 14px;
+    }
+
+
+
+    .hero-section {
+        padding: 30px 20px;
+        flex-direction: column-reverse;
+    }
+
+    .hero-section .content{
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-section h1 {
+        font-size: 24px;
+    }
+
+    .hero-section p {
+        font-size: 13px;
+    }
+
+    .hero-button {
+        gap: 5px;
+    }
+
+    .hero-section img {
+        max-width: 100%;
+    }
+
+
+
+
+
+
+    .carousel {
+        flex-direction: row; /* Kembali ke horizontal */
+        align-items: center;
+        overflow-x: auto; /* Scroll horizontal */
+        overflow-y: hidden;
+        white-space: nowrap; /* Mencegah turun ke bawah */
+        scroll-behavior: smooth; /* Smooth scroll */
+        -ms-overflow-style: none;  /* Hilangkan scrollbar di Edge */
+        scrollbar-width: none; /* Hilangkan scrollbar di Firefox */
+    }
+
+    /* Hilangkan scrollbar di Chrome & Safari */
+    .carousel::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Munculkan scrollbar saat hover */
+    .carousel:hover::-webkit-scrollbar {
+        display: block;
+        height: 6px;
+    }
+
+    .carousel:hover::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 3px;
+    }
+
+    .carousel .carousel-track {
+        display: flex;
+        flex-wrap: nowrap; /* Pastikan tetap horizontal */
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .carousel .carousel-track .card {
+        flex: 0 0 280px;
+        width: 280px;
+    }
+
+    .table-card-reg,
+    .table-card-vip {
+        width: 260px;
+        flex: 0 0 260px;
+    }
+
+    .carousel .button-prev,
+    .carousel .button-next {
+        display: none; /* Sembunyikan tombol di layar kecil */
+    }
+
+    .card {
+        width: 240px;
+        padding: 10px;
+    }
+
+    .card-title {
+        font-size: 14px;
+    }
+
+    .card-capacity p,
+    .capacity-text {
+        font-size: 10px;
+    }
+
+    .capacity-icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .order-table-section {
+        text-align: center; 
+        padding: 45px 25px;
+    }
+
+    .text-item p{
+        margin-left: 10px;
+    }
+    
+}
